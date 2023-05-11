@@ -19,20 +19,43 @@ public class View {
 	
 	while(loop)
 	{
-	System.out.println(" 1.Insert\n 2.Show\n 3.Update\n 4.Delete\n 5.Search\n 0.Exit");
+		System.out.println(":::::::LIST::::::");
+	
+		System.out.println("1.Add Student:");
+		System.out.println("2.Show Student:");
+		System.out.println("3.Upadte Student:");
+		System.out.println("4.Delete Student:");
+		System.out.println("5.Search Student:");
+		System.out.println("0.Exit:");
+
 	
 	System.out.println("Enter Your Choice  : ");
 	int ch=Integer.parseInt(sc.nextLine());
 	switch(ch)
 	{
 	case 1:
-		c.Insert();
+		try {
+			c.Insert();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		break;
 	case 2:
-		c.Show();
+		try {
+			c.Show();
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		break;
 	case 3:
-		c.Update();
+		try {
+			c.Update();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		break;
 	case 4:
 		c.Delete();
