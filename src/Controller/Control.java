@@ -25,14 +25,15 @@ public void LodingBar() throws InterruptedException
           
        }
        System.out.println("\nLoading Completed!");
-	
+       System.out.println("---------------------");
+
 	
 	
 	
 }
 public void LodingBar2() throws InterruptedException
 {
-	 System.out.print("Loding");
+	 System.out.print("Updating");
 	  
        for (int i = 0; i <=10; i++) {
        	System.out.print(".");
@@ -40,6 +41,24 @@ public void LodingBar2() throws InterruptedException
           
        }
        System.out.println("\nUpdate Completed!");
+       System.out.println("---------------------");
+
+	
+	
+	
+}
+
+public void LodingBar3() throws InterruptedException
+{
+	 System.out.print("Data Inserting");
+	  
+       for (int i = 0; i <=10; i++) {
+       	System.out.print(".");
+           Thread.sleep(200); 
+          
+       }
+       System.out.println("\nData Insert Completed!");
+      System.out.println("---------------------");
 	
 	
 	
@@ -65,7 +84,7 @@ public void Insert() throws InterruptedException
 	    double p2=Double.parseDouble(sc.nextLine());
 	    System.out.println("Mark in Math: ");
 	    double p3=Double.parseDouble(sc.nextLine());
-		System.out.println(":::::::::::");
+		
         		
 	    s[i]=new Student();
 	    s[i].setRoll(roll);
@@ -77,6 +96,7 @@ public void Insert() throws InterruptedException
 	}
 	k=n+k;
 	System.out.println("::::::::::");
+	LodingBar3();
 
 }
 

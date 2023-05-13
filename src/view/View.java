@@ -19,6 +19,12 @@ public class View {
 	
 	while(loop)
 	{
+		try {
+			c.LodingBar();
+		} catch (InterruptedException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 		System.out.println(":::::::LIST::::::");
 	
 		System.out.println("1.Add Student:");
