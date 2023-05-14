@@ -21,7 +21,7 @@ public void LodingBar() throws InterruptedException
 	  
        for (int i = 0; i <=10; i++) {
        	System.out.print(".");
-           Thread.sleep(200); 
+           Thread.sleep(400); 
           
        }
        System.out.println("\nLoading Completed!");
@@ -105,12 +105,22 @@ public void Show() throws InterruptedException
 	LodingBar();
 	for(i=0;i<k;i++)
 	{
-		System.out.println("Roll No: "+s[i].getRoll()+",  Name: "+s[i].getName()+ "\n"+ "English: "+s[i].getP1()+","
-	+ "English: "+s[i].getP2()+",  Math: "+s[i].getP3());
+//		System.out.println("Roll No: "+s[i].getRoll()+",  Name: "+s[i].getName()+ "\n"+ "English: "+s[i].getP1()+","
+//	+ "Science: "+s[i].getP2()+",  Math: "+s[i].getP3());
 		
-	   double Result=(s[i].getP1()+s[i].getP2()+s[i].getP3())/3;
+		System.out.println("Roll No : "+s[i].getRoll());
+		System.out.println("Name    : "+s[i].getName());
+		System.out.println("English : "+s[i].getP1());
+		System.out.println("Science : "+s[i].getP2());
+		System.out.println("Math    : "+s[i].getP3());
+		
+		
+		
+		
+	   double Result=(s[i].getP1()+s[i].getP2()+s[i].getP3());
 	   s[i].setResult(Result);
-       System.out.println("Result : "+s[i].getResult());
+	  //Double Result = (r/300)*100;
+       System.out.println("Result  : "+((s[i].getResult()/300)*100)+"%");
 	   System.out.println(":::::::::::");
 	   
 

@@ -5,9 +5,26 @@ import Controller.Control;
 
 
 public class View {
-
+	
+	
+	
 	public View()
 	{
+		 //System.out.println("        *               *  ");
+		 System.out.println("      * * *           *  * *");
+	      System.out.println("    *       *       *        *");
+	      System.out.println("  *           *   *            *");
+	      System.out.println(" *              *               *");
+	      System.out.println("*                                *");
+	      System.out.println("*      WELCOME TO MY PROJECT     *");
+	      System.out.println(" *                               *");
+	      System.out.println("  *                             *");
+	      System.out.println("    *                         *");
+	      System.out.println("      *                     *");
+	      System.out.println("        *                 *");
+	      System.out.println("           *           *");
+	      System.out.println("              *     *");
+	      System.out.println("                 *");
 		menu();
 		
 	}
